@@ -114,7 +114,7 @@ body {
   color: white;
 }
 
-/* ⭐ UPDATED HERO SECTION (MERGED PERFECTLY) */
+/*  HERO SECTION  */
 .hero {
   padding: 70px 0;
 }
@@ -140,7 +140,7 @@ body {
   margin-bottom: 32px;
 }
 
-/* SEARCH BAR EXACT DESIGN */
+/* SEARCH BAR  */
 .search-bar {
   background: #fff;
   border-radius: 40px;
@@ -195,7 +195,7 @@ body {
   text-decoration: underline;
 }
 
-/* HERO IMAGE EXACT SAME */
+/* HERO IMAGE  */
 .hero-image img {
   width: 100%;
   border-radius: 16px;
@@ -506,3 +506,4 @@ body {
     grid-template-columns: 1fr;
   }
 }
+

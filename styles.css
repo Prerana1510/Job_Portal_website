@@ -1,4 +1,4 @@
-/* --- YOUR ORIGINAL CSS STARTS --- */
+/* ---  CSS STARTS --- */
 :root {
   --bg: #f5f7fb;
   --container: 1150px;
@@ -506,4 +506,5 @@ body {
     grid-template-columns: 1fr;
   }
 }
+
 

@@ -45,7 +45,10 @@
 
       <!-- SEARCH BAR -->
       <div class="search-bar">
-        <button class="find-btn">Find Your Job</button>
+        <a href="job_listing.html" class="find-btn" style="display:inline-block; text-decoration:none; color:white;">
+          Find Your Job
+        </a>
+
         <input type="text" placeholder="ex.web developer">
         <select>
           <option>Country</option>
@@ -155,18 +158,20 @@
   </div>
 </section>
     
-
-    <!-- FEATURED JOBS -->
+<!-- FEATURED JOBS -->
 <section class="featured container">
     <div class="featured-header">
         <div>
             <h2>Featured Jobs</h2>
             <p class="muted">Hand-picked opportunities from top companies</p>
         </div>
-        <button class="view-all-btn">View All Jobs</button>
+
+        <!-- UPDATED: View All Jobs Button -->
+        <a href="job_listing.html" class="view-all-btn">View All Jobs</a>
     </div>
 
     <div class="jobs-grid">
+        
         <!-- Job Card 1 -->
         <div class="job-card">
             <div class="job-top">
@@ -191,53 +196,68 @@
 
             <div class="bottom-row">
                 <p class="salary">$120k - $150k/year</p>
-                <button class="details-btn">View Details</button>
+
+                <!-- UPDATED: View Details link -->
+                <a href="job-details.html" class="details-btn">View Details</a>
             </div>
         </div>
 
-        <!-- Duplicate the card two more times -->
+        <!-- Job Card 2 -->
         <div class="job-card">
             <div class="job-top">
                 <img src="Assets/Icons/Briefcase Icon.svg" class="job-icon">
                 <span class="bookmark">🔖</span>
             </div>
+
             <h3>Job Title</h3>
             <p class="company">Company Name</p>
+
             <div class="skills">
                 <span>Skills</span><span>Skills</span><span>Skills</span><span>Skills</span>
             </div>
+
             <div class="location-row">
                 <img src="Assets/Icons/Location Icon.svg" class="loc-icon">
                 <p>Secunderabad, India</p>
             </div>
+
             <div class="bottom-row">
                 <p class="salary">$120k - $150k/year</p>
-                <button class="details-btn">View Details</button>
+
+                
+                <a href="job-details.html" class="details-btn">View Details</a>>
             </div>
         </div>
 
+        <!-- Job Card 3 -->
         <div class="job-card">
             <div class="job-top">
                 <img src="Assets/Icons/Briefcase Icon.svg" class="job-icon">
                 <span class="bookmark">🔖</span>
             </div>
+
             <h3>Job Title</h3>
             <p class="company">Company Name</p>
+
             <div class="skills">
                 <span>Skills</span><span>Skills</span><span>Skills</span><span>Skills</span>
             </div>
+
             <div class="location-row">
                 <img src="Assets/Icons/Location Icon.svg" class="loc-icon">
                 <p>Secunderabad, India</p>
             </div>
+
             <div class="bottom-row">
                 <p class="salary">$120k - $150k/year</p>
-                <button class="details-btn">View Details</button>
+
+                <!-- UPDATED -->
+                <a href="job-details.html" class="details-btn">View Details</a>
             </div>
         </div>
+
     </div>
 </section>
-
 
    <!-- CTA -->
 <section class="cta">

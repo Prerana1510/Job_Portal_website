@@ -152,7 +152,7 @@
                 <h2>Reset Password</h2>
                 <input type="email" placeholder="Enter your email" id="resetEmail">
                 <button onclick="resetPassword()">Send Reset Link</button>
-                <button class="back-btn" onclick="showLogin()" style="width:100%; margin-top:10px; background:#666;">Back to Login</button>
+                <button class="back-btn" onclick="login()" style="width:100%; margin-top:10px; background:#666;">Back to Login</button>
             </div>
 
         </div>
@@ -164,12 +164,32 @@
         document.getElementById("loginBox").style.display = "none";
         document.getElementById("resetBox").style.display = "block";
     }
+
     function showLogin() {
         document.getElementById("resetBox").style.display = "none";
         document.getElementById("loginBox").style.display = "block";
     }
 
-    function login() { alert("Login clicked!"); }
+    /* ✅ UPDATED LOGIN FUNCTION WITH VALIDATION */
+    function login() {
+        const email = document.getElementById("loginEmail").value.trim();
+        const password = document.getElementById("loginPassword").value.trim();
+
+        const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+        if (!emailPattern.test(email)) {
+            alert("❌ Please enter a valid email address");
+            return;
+        }
+
+        if (password.length < 6) {
+            alert("❌ Password must be at least 6 characters long");
+            return;
+        }
+
+        alert("✔ Login successful!");
+    }
+
     function resetPassword() { alert("Reset Password clicked!"); }
     function googleLogin() { alert("Google Login clicked!"); }
     function facebookLogin() { alert("Facebook Login clicked!"); }

@@ -58,7 +58,7 @@
     /* Jobs */
     .jobs{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
     .job{border:1px solid #eee;border-radius:14px;padding:18px}
-    .job h4{font-size:16px;font-weight:600;margin-bottom:4px}
+    .job h4{font-size:16px;font-weight:600;margin-bottom:4px; display:inline-block;}
     .job p{font-size:14px;color:#666;margin-bottom:10px}
     .tags span{font-size:12px;background:#f1f5f9;padding:4px 8px;border-radius:6px;margin-right:6px}
     .salary{margin:12px 0;font-weight:600}
@@ -100,6 +100,7 @@
         <p>Here's what's happening with your job search today.</p>
       </div>
 
+      <!-- Stats -->
       <section class="stats">
         <div class="stat"><h3>74</h3><span>Applied Jobs</span></div>
         <div class="stat"><h3>18</h3><span>Saved Jobs</span></div>
@@ -107,6 +108,7 @@
         <div class="stat"><h3>32</h3><span>Recommended</span></div>
       </section>
 
+      <!-- Recent Applications -->
       <section class="card">
         <div class="card-header">
           <h3>Recent Applications</h3>
@@ -125,32 +127,42 @@
         </table>
       </section>
 
-      <section class="card">
-        <div class="card-header">
-          <h3>Recommended Jobs</h3>
-          <button class="btn">See All</button>
-        </div>
-        <div class="jobs">
-          <div class="job">
-            <h4>Job Title</h4><p>Company Name</p>
-            <div class="tags"><span>Full-time</span><span>Remote</span></div>
-            <div class="salary">$120k - $150k/year</div>
-            <button class="apply">Apply Now</button>
-          </div>
-          <div class="job">
-            <h4>Job Title</h4><p>Company Name</p>
-            <div class="tags"><span>Full-time</span><span>Remote</span></div>
-            <div class="salary">$120k - $150k/year</div>
-            <button class="apply">Apply Now</button>
-          </div>
-          <div class="job">
-            <h4>Job Title</h4><p>Company Name</p>
-            <div class="tags"><span>Full-time</span><span>Remote</span></div>
-            <div class="salary">$120k - $150k/year</div>
-            <button class="apply">Apply Now</button>
-          </div>
-        </div>
-      </section>
+      <!-- Recommended Jobs -->
+<section class="card">
+  <div class="card-header">
+    <h3>Recommended Jobs</h3>
+    <button class="btn">See All</button>
+  </div>
+  <div class="jobs">
+    <div class="job" style="display:flex;flex-direction:column;align-items:center;text-align:center;">
+      <img src="Assets/Icons/Briefcase Icon.svg" alt="Job Icon" style="width:40px;height:40px;margin-bottom:10px;">
+      <h4>Frontend Developer</h4>
+      <p>TechCorp Inc.</p>
+      <div class="tags"><span>Full-time</span><span>Remote</span></div>
+      <div class="salary">$120k - $150k/year</div>
+      <a href="job-details.html"><button class="apply">View Details</button></a>
+    </div>
+
+    <div class="job" style="display:flex;flex-direction:column;align-items:center;text-align:center;">
+      <img src="Assets/Icons/Briefcase Icon.svg" alt="Job Icon" style="width:40px;height:40px;margin-bottom:10px;">
+      <h4>Backend Engineer</h4>
+      <p>StartupXYZ</p>
+      <div class="tags"><span>Full-time</span><span>Remote</span></div>
+      <div class="salary">$100k - $130k/year</div>
+      <a href="job-details.html"><button class="apply">View Details</button></a>
+    </div>
+
+    <div class="job" style="display:flex;flex-direction:column;align-items:center;text-align:center;">
+      <img src="Assets/Icons/Briefcase Icon.svg" alt="Job Icon" style="width:40px;height:40px;margin-bottom:10px;">
+      <h4>UI/UX Designer</h4>
+      <p>DesignHub</p>
+      <div class="tags"><span>Full-time</span><span>On-site</span></div>
+      <div class="salary">$90k - $120k/year</div>
+      <a href="job-details.html"><button class="apply">View Details</button></a>
+    </div>
+  </div>
+</section>
+
     </main>
   </div>
 </body>
